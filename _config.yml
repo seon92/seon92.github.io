@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Seon-Ho Lee"
-  avatar           : "Image_Kota_Kinabalu.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "profile_picture.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A Ph.D. student at Korea University"
   location         : "Seoul, Korea"
   email            : "seonholee@mcl.korea.ac.kr"
