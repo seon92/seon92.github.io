@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Seon-Ho Lee"
   avatar           : "images/profile_picture.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A Ph.D. student at Korea University"
+  bio              : "A Master student at Korea University"
   location         : "Seoul, Korea"
   email            : "seonholee@mcl.korea.ac.kr"
   links:
