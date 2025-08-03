@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main  # main 브랜치에 push 될 때마다 실행
+      - main # main 브랜치에 push 될 때마다 실행
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2  # 알맞은 Ruby 버전
+          ruby-version: 3.2 # 알맞은 Ruby 버전
           bundler-cache: true
 
       - name: Install dependencies

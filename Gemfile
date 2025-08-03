@@ -23,6 +23,11 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    gem 'jekyll-include-cache'
+    gem 'jekyll-archives'
+    gem 'jekyll-redirect-from'
+    gem 'jekyll-remote-theme'
+    gem 'jekyll-gist'
 
     gem 'classifier-reborn'  # used for content categorization during the build
 end
