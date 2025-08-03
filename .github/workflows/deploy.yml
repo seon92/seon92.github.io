@@ -1,29 +1,35 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main # main 브랜치에 push 될 때마다 실행
+      - main  # main 브랜치에 push될 때마다 실행
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout source
+        uses: actions/checkout@v3
 
-      - name: Setup Ruby
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # 알맞은 Ruby 버전
-          bundler-cache: true
+          ruby-version: '3.2' # 또는 Gemfile에 맞는 버전
 
       - name: Install dependencies
         run: |
           bundle install
 
-      - name: Build the site with Jekyll
-        run: bundle exec jekyll build
+      - name: Build site with Jekyll
+        run: |
+          bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
