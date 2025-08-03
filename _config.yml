@@ -201,8 +201,9 @@ plugins:
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  - jekyll-seo-tag
+  # - jekyll-imagemagick
+  # - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -212,6 +213,11 @@ plugins:
   - jekyll-tabs
   - jekyll-terser
   - jekyll-toc
+  - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-gist
   - jekyll-twitter-plugin
   - jemoji
 
@@ -263,8 +269,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Lee]
+  first_name: [Seon-Ho]
 
   style: apa
   locale: en
