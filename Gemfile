@@ -28,6 +28,7 @@ group :jekyll_plugins do
     gem 'jekyll-redirect-from'
     gem 'jekyll-remote-theme'
     gem 'jekyll-gist'
+    gem 'jekyll-seo-tag'
 
     gem 'classifier-reborn'  # used for content categorization during the build
 end
