@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy with GitHub Pages
 
 on:
   push:
@@ -14,17 +14,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: ruby/setup-ruby@v1
+      - uses: actions/setup-node@v4
         with:
-          ruby-version: "3.2"
+          node-version: 20
 
-      - run: bundle install
-      - run: bundle exec jekyll build -d _site
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v2
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: _site
+          path: ./_site
 
   deploy:
     needs: build
